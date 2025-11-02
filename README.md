@@ -90,19 +90,20 @@ $env:AWS_DEFAULT_OUTPUT="json"
 ### ✅ Validação da Instalação
 
 Após instalar, verifique a versão instalada:
+
 ´´´
 localstack --version
-
+´´´
 ### Execução via Docker
 
 Caso utilize Docker, execute o LocalStack com o comando abaixo:
+
 ´´´
 docker run -d --name localstack \
   -p 4566:4566 -p 4571:4571 \
   -e SERVICES=ALL \
   -e DEBUG=1 \
-  -v /var/run/docker.sock:/var/run/docker.sock \
-  localstack/localstack
+  -v /var/run/docker.sock:/var/run/docker.sock \localstack/localstack
 ´´´
 ### 🧭 Atualização do LocalStack CLI via PowerShell
 
